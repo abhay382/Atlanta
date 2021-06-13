@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">AtlantaConsultancy</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/com/contact">Contact <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/com/about/">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/com/development/">Development</a>
+          <a class="dropdown-item" href="/com/ecommmerce/">Ecommerce Solution</a>
+            <a class="dropdown-item" href="/com/consulting/">Consulting</a>
+          <a class="dropdown-item" href="/com/cloud/">Cloud Services</a>
+           <a class="dropdown-item" href="/com/Powerplatform/">PowerPlatform</a>
+          <a class="dropdown-item" href="/com/datascience/">DataScience</a>
+            <a class="dropdown-item" href="/com/bigdata/">BigData</a>
+          <a class="dropdown-item" href="/com/SAP/">SAP</a>
+           <a class="dropdown-item" href="/com/Digital/">DigitalMarketing</a>
+          <a class="dropdown-item" href="/com/advertisement/">Advertisement</a>
+            <a class="dropdown-item" href="/com/carrier/">Carrier</a>
+          <a class="dropdown-item" href="#"> </a>
+                   <a class="dropdown-item" href="/com/dataanalyse/">DataAnalysis</a>
+           <a class="dropdown-item" href="/com/Business/">Business consultants  </a>
+
+
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/com/Financesolution/">Finance solutions</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+
+      <a href = "mailto: abc@example.com">info@atlantaconsultancy.com</a>
+      <div>
+      <a href="tel:6350364990"><img src="{% static 'bal.png' %}" alt="Girl in a jacket" width="30" height="30"></a>
+</div>
+
+    </form>
+  </div>
+</nav>
+
+
+<div class="container my-3">
+    <h3>Contact Us</h3>
+    <form action="/com/contact/" method="post">{% csrf_token %}
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name">
+  </div>
+  <div class="form-group">
+    <label for="name">Email</label>
+    <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email">
+  </div>
+
+    <div class="form-group">
+    <label for="name">Phone</label>
+    <input type="tel" class="form-control" id="phone" name='phone' placeholder="Enter Your Phone Number">
+  </div>
+
+
+   <div class="form-group">
+    <label for="desc">How May We Help You?</label>
+    <textarea class="form-control" id="desc" name='desc' rows="3"></textarea>
+  </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+
+
+</div>
+
+
+
+
+  <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+     <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-muted">
+   All Right Reserved by Atlanta Consultancy
+  </div>
+</div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
